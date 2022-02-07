@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Make Tea</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div th:insert="fragments/headfoot :: header"></div>
+
+<div class="page-content">
+<h1>
+    Step One:
+</h1>
+<p>
+    Warm up a cup of water in the microwave for approximately 1 minute and 30 seconds
+    depending on your microwave power.
+</p>
+
+<img alt="cup of water in microwave" width="400" height="320" th:src="@{/img/stepone.jpg}">
+</div>
+
+
+<div th:replace="fragments/headfoot :: footer"></div>
+</body>
+</html>

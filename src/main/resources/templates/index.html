@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>How to Make Tea</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div th:insert="fragments/headfoot :: header"></div>
+
+<div class="page-content">
+<h1>
+    How to Make Tea in Three Easy Steps <br>
+    By: Casidy Horst
+</h1>
+
+<img alt="tea examples" width="220" height="320" th:src="@{/img/coverphoto.jpg}">
+
+<p>
+    Tea can be beneficial to the body depending on the type of tea. Each type of tea also comes in a
+    variety of flavors to make it a more enjoyable experience. I believe tea is a healthier way for
+    gaining energy to go about your day.
+</p>
+</div>
+
+<div th:replace="fragments/headfoot :: footer"></div>
+</body>
+</html>

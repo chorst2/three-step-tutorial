@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Make Tea</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div th:insert="fragments/headfoot :: header"></div>
+
+<div class="page-content">
+<h1>
+    Step Two:
+</h1>
+<p>
+    Take cup of hot water out of microwave and put tea bag in the cup. Allow the tea to steep for 5-10 minutes
+    depending on your preference.
+</p>
+
+<img alt="tea bag in cup" width="240" height="310" th:src="@{/img/steptwo.jpg}">
+</div>
+
+<div th:replace="fragments/headfoot :: footer"></div>
+</body>
+</html>

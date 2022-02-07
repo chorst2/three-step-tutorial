@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Make Tea</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div th:insert="fragments/headfoot :: header"></div>
+
+<div class="page-content">
+<h1>
+    Step Three:
+</h1>
+<p>
+    Remove tea bag from cup when the steep time is up. You can add in sugar and creamer or other ingredients if desired.
+    Enjoy your finished product!
+</p>
+
+<img alt="finished cup of tea" width="240" height="310" th:src="@{/img/stepthree.jpg}">
+</div>
+
+<div th:replace="fragments/headfoot :: footer"></div>
+</body>
+</html>
